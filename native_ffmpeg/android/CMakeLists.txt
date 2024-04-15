@@ -20,7 +20,6 @@ endforeach ()
 
 add_library(native_ffmpeg SHARED ../src/native_ffmpeg.cpp)
 
-
 target_link_libraries(
     native_ffmpeg 
 
