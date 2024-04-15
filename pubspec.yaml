@@ -1,0 +1,42 @@
+name: ffmpeg_flutter
+description: "Native ffmpeg test"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  native_ffmpeg:
+    path: native_ffmpeg
+  ffi: ^2.1.2
+
+  cupertino_icons: ^1.0.6
+  file_picker: ^8.0.0+1
+  image_picker: ^1.0.7
+  path_provider: ^2.1.2
+  injectable: ^2.4.1
+  get_it: ^7.6.8
+  flutter_bloc: ^8.1.5
+  bloc: ^8.1.4
+  video_player: ^2.8.5
+  chewie: ^1.8.1
+  logger: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  injectable_generator: ^2.6.1
+  build_runner: ^2.4.9
+  rename: ^3.0.2
+
+
+flutter:
+  uses-material-design: true
+
+
