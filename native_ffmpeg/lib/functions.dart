@@ -14,7 +14,7 @@ String getVersion() => _getFfmpegVersion().toDartString();
 Future<void> compressVideo(String inputPath, String outputPath) async {
   await compute<String, void>(
     (inputPath) {
-      initializeNativeLogger();
+      if (kDebugMode) initializeNativeLogger();
       _compressVideoFunction(inputPath.toNativeUtf8(), outputPath.toNativeUtf8());
     }, 
     inputPath

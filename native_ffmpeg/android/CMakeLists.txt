@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.4.1)
 include_directories(../include/${ANDROID_ABI})
 
 set(ffmpeg_libs_dir ${CMAKE_CURRENT_SOURCE_DIR}/src/main/JniLibs/${ANDROID_ABI})
-set(ffmpeg_libs avcodec avfilter avformat avutil swresample swscale)
+set(ffmpeg_libs avcodec avdevice avfilter avformat avutil postproc swresample swscale)
 
 foreach (ffmpeg_lib ${ffmpeg_libs})
     add_library(

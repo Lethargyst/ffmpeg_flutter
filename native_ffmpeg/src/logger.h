@@ -9,10 +9,10 @@
 /// Инициализировать функцию логгирования. Вызывается из dart кода
 extern "C" {
     /// Функция логгирования
-    void (*dartLog)(char *);
+    void (*dartLog)(const char *);
 
     FFI_EXPORT
-    void initializeLogger(void (*logCallback)(char *)) {
+    void initializeLogger(void (*logCallback)(const char *)) {
         dartLog = logCallback;
     }
 }
